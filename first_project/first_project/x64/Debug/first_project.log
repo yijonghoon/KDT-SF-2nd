@@ -1,4 +1,2 @@
 ﻿  first_project.cpp
-C:\Users\UserK\Desktop\github\KDT-SF-2nd\first_project\first_project\first_project.cpp(22,18): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\UserK\Desktop\github\KDT-SF-2nd\first_project\first_project\first_project.cpp(23,18): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
   first_project.vcxproj -> C:\Users\UserK\Desktop\github\KDT-SF-2nd\first_project\x64\Debug\first_project.exe
