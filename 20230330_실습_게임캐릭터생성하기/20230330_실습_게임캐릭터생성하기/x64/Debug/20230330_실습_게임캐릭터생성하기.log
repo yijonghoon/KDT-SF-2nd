@@ -1,0 +1,34 @@
+﻿  20230330_실습_게임캐릭터생성하기.cpp
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(83,12): error C2371: 'name': 재정의. 기본 형식이 다릅니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(80,14): message : 'name' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(86,30): error C2039: 'getName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(101,13): error C2088: '>>': class에 맞지 않습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(102,11): error C2039: 'setName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(104,54): error C2039: 'getName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(109,11): error C2039: 'changeLevel': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(110,46): error C2039: 'getLevel': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(114,11): error C2039: 'changeItem_num': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(115,56): error C2039: 'getItem_num': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(119,15): error C2039: 'getItem_num': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(120,12): error C2039: 'changeItem_num': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(122,57): error C2039: 'getItem_num': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(130,40): error C2039: 'getName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(131,38): error C2039: 'getLevel': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(132,40): error C2039: 'getHp': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(133,42): error C2039: 'getAttack': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기\20230330_실습_게임캐릭터생성하기.cpp(134,49): error C2039: 'getItem_num': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'의 멤버가 아닙니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring(5300,29): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' 선언을 참조하십시오.

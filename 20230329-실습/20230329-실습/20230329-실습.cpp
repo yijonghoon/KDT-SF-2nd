@@ -107,8 +107,7 @@ int main()
 			std::ifstream file3;
 			file3.open("member_tel.txt");
 			if (file3.is_open()) {
-				while (!file3.eof()) {
-					getline(file3, member_info);
+				while (getline(file3, member_info)) {
 					signed_member_info.push_back(member_info);
 					counter1++;
 				}
@@ -119,6 +118,7 @@ int main()
 						signed_member_info[i] = id + " " + telephone;
 						match = 1;
 					}
+
 
 				}
 				if (match == 0) {
