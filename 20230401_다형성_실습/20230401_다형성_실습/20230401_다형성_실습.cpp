@@ -2,13 +2,14 @@
 //
 
 #include <iostream>
-
+#include <typeinfo>
 class Snack {
     std::string name, company;
     int price;
 public:
     Snack(std::string name){
         this->name = name;
+        this->company = "aaa";
     }
     std::string getSnackname(){
         return name;
@@ -20,7 +21,9 @@ class Candy : public Snack {
 protected:
     std::string flavor;
 public:
-    Candy(std::string name) : Snack(name) {}
+    Candy(std::string name) : Snack(name) {
+        this->flavor = "yogurt strawberry";
+    }
     std::string getCandyflavor() {
         return flavor;
     }
@@ -30,7 +33,9 @@ public:
 class Chocolate : public Snack {
     std::string shape;
 public:
-    Chocolate(std::string name) : Snack(name) {}
+    Chocolate(std::string name) : Snack(name) {
+        this->shape = "square";
+    }
     std::string getChocolateshape() {
         return shape;
     }
@@ -38,10 +43,24 @@ public:
 
 int main()
 {
-    Snack snackBasket[4] = { Candy("anytime"), Candy("Tong almond"), Chocolate("abc_chocolate"), Chocolate("hershey") };
+    Snack* snackBasket[4] = { new Candy("anytime"),new Candy("Tong_almond"),new Chocolate("abc_chocolate"),new Chocolate("hershey") };
+    //Snack snackBasket[4] = { Candy("anytime"), Candy("Tong almond"), Chocolate("abc_chocolate"), Chocolate("hershey") };
+    Chocolate* chocoBasket[2] = { };
+    Candy* candyBasket[2] = { };
+
     for (int i = 0; i < 4; i++) {
-        std::cout << snackBasket[i].getSnackname() << std::endl;
+        std::cout << snackBasket[i]->getSnackname()<< /*typeid(snackBasket[i]).name() <<*/ std::endl;
+
+        if (i < 2) {
+            candyBasket[i] = (Candy*)snackBasket[i];
+            std::cout << candyBasket[i]->getCandyflavor() << std::endl;
+        }
+        else {
+            chocoBasket[i-2] = (Chocolate*)snackBasket[i];
+            std::cout << chocoBasket[i - 2]->getChocolateshape() << std::endl;
+        }
     }
+    
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
