@@ -43,13 +43,14 @@ public:
 		this->height = height;
 	}
 
-	int area() {
-		return height * get_side_bottom_length() /2;
+	double area() {
+		return (double) height * get_side_bottom_length() /2;
 	}
 };
 int main() {
-	Rectangle R(4,10,5);
-	Triangle T(3, 10, 5);
+	Rectangle R(4,3,5);
+	Triangle T(3, 3, 5);
 
+	std::cout << R.printInfo() << std::endl;
 	std::cout << R.area() << " " << T.area();
 }
