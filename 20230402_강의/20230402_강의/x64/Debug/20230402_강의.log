@@ -1,0 +1,3 @@
+﻿  20230402_강의.cpp
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230402_강의\20230402_강의\20230402_강의.cpp(53,12): error C2086: 'Person p': 재정의
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230402_강의\20230402_강의\20230402_강의.cpp(46,12): message : 'p' 선언을 참조하십시오.
