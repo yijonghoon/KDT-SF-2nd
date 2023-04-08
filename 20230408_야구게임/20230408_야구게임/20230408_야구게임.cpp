@@ -4,24 +4,24 @@
 #include <iostream>
 #include<cstdlib> //rand(), srand()
 #include<ctime> //time()
-
+#define SIZE 3
 
 int main()
 {
     srand((unsigned int)time(NULL));
-    int lotto[3];
+    int lotto[SIZE];
     int random = 0;
     int count = 0;
 
-    int baseball[3];
+    int baseball[SIZE];
     std::string baseball_number;
     std::cout << "서로 다른 1 ~ 9 사이의 숫자 세 개 입력해주세요. 띄어쓰기로 구분 ex: 8 3 5 " << std::endl;
     
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < SIZE; i++) {
         std::cin >> baseball[i] ;
     }
 
-    while (count < 3)
+    while (count < SIZE)
     {
         bool is_exist = false;
         random = rand() % 9 +1 ;
@@ -37,13 +37,13 @@ int main()
             count++;
         }
     }
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < SIZE; i++) {
         std::cout << lotto[i] << " ";
     }
     int ballcount = 0;
     int strikecount = 0;
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
             if (baseball[i] == lotto[j]) {
                 ballcount += 1;
             }
