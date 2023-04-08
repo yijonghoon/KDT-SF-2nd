@@ -2,11 +2,141 @@
 //
 
 #include <iostream>
+double user_input_number = 0;
+
+double userInputNumber() {
+    double number;
+    std::cout << "숫자를 입력해주세요 : ";
+    std::cin >> number;
+    user_input_number = number;
+    return number;
+}
+
+class calculator {
+    static double result;
+public:
+
+    virtual void calculate() {
+        std::cout << getResult();
+    }
+
+    static double getResult() {
+        return result;
+    }
+    static void setResult(double new_result) {
+        result = new_result;
+    }
+    static void resetResult() {
+        setResult(0);
+        result = userInputNumber();
+    }
+    virtual ~calculator() {
+    }
+};
+
+double calculator::result = 0;
+
+std::string userInputMethod() {
+    std::string method;
+    std::cout << "연산자를 입력해주세요 : ";
+    std::cin >> method;
+    return method;
+}
+
+class calculatePlus : public calculator {
+public:
+    void calculate() {
+        setResult(getResult() + userInputNumber());
+    }
+};
+class calculateMinus : public calculator {
+    void calculate() {
+        setResult(getResult() - userInputNumber());
+    }
+};
+class calculateMultifly : public calculator {
+    void calculate() {
+        setResult(getResult() * userInputNumber());
+    }
+};
+class calculateDivide : public calculator {
+    void calculate() {
+        setResult(getResult() / userInputNumber());
+    }
+};
+
+
+void methodIdentifier(std::string method) {
+    calculator* calculationMethod;
+    if (method == "+") {
+        calculationMethod = new calculatePlus();
+        calculationMethod->calculate();
+    }
+    else if (method == "-") {
+        calculationMethod = new calculateMinus();
+        calculationMethod->calculate();
+    }
+    else if (method == "*") {
+        calculationMethod = new calculateMultifly();
+        calculationMethod->calculate();
+
+    }
+    else if (method == "/") {
+        calculationMethod = new calculateDivide();
+        calculationMethod->calculate();
+    }
+    
+    else
+    {
+        std::cout << "잘못된 연산자를 입력하였습니다." << std::endl;
+        methodIdentifier(userInputMethod());
+
+    }
+    
+
+
+}
+
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    calculator::setResult(userInputNumber());
+    bool isReset = false;
+    std::string command;
+    while (command != "EXIT")
+    {
+        if (isReset) {
+            calculator::resetResult();
+            isReset = false;
+        }
+        std::string method;
+        
+        method = userInputMethod();
+        methodIdentifier(method);
+        
+        std::cout << calculator::getResult() << std::endl;
+
+        std::cout << "연산을 계속 진행하시겠습니까? (Y : 계속, AC : 초기화, EXIT : 종료) : ";
+        while (true) {
+            std::cin >> command;
+
+            if (command == "AC") {
+                isReset = true;
+                break;
+            }
+            else if (command == "Y" || command == "EXIT") {
+                break;
+            }
+            else {
+                std::cout << "잘못된 명령어 입니다. 대소문자 확인 후 다시 입력해주세요 : ";
+            }
+        }
+    }
 }
+
+
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
 // 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
