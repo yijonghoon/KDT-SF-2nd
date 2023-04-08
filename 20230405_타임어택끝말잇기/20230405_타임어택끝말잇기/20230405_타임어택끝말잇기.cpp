@@ -15,7 +15,9 @@ int main()
 	bool repeat = false;
 
 	clock_t start, finish;
+	int time_limit = 15;
 	double duration;
+
 
 	start = clock();
 	while (true) {
@@ -34,7 +36,14 @@ int main()
 		if (repeat == false) {
 			if (answer[0] == last_word) {
 				words.push_back(answer);
-				count++;
+				finish = clock();
+				duration = (double)(finish - start) / CLOCKS_PER_SEC;
+				if (duration < time_limit) {
+					count++;
+				}
+				else {
+					break;
+				}
 				last_word = answer.back();
 			}
 			else {
@@ -44,7 +53,7 @@ int main()
 		finish = clock();
 
 		duration = (double)(finish - start) / CLOCKS_PER_SEC;
-		if (duration > 15) {
+		if (duration > time_limit) {
 			break;
 		}
 	}
