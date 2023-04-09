@@ -31,7 +31,7 @@ int main()
         // 마방진 보드를 만들기 위한 코드
 
         int count = 0; // N^2개의 숫자를 뽑기 위한 count
-        std::vector<int>array; // 숫자 N^2 개를 뽑아 오기 위한 벡터 ex: { 3, 5, 1, 7, 6, 2, 4, 9, 8 }
+        std::vector<int>array; // 숫자 N^2 개를 뽑아 오기 위한 벡터 ex: { 3, 5, 1, 7, 6, 2, 4, 9, 8 } ... 벡터 이름이 어레이여서 죄송합니다
         while (count < side_squre)
         {
             random = rand() % side_squre + 1; // 랜덤 숫자를 하나 뽑고
@@ -94,10 +94,13 @@ int main()
                 for (int j = 0; j < side; j++) {
                     std::cout << matrix[i][j] << " ";
                     
+                    
                 }
                 std::cout << std::endl;
+                matrix[i].clear();
             }
             std::cout << std::endl  << while_count << "회 시도 후 성공했습니다." << std::endl;
+            matrix.clear();
             break; // break로 while문 탈출
         }
       
@@ -109,5 +112,9 @@ int main()
 // 
 // 1. 숫자를 뽑아올때 combination을 쓰지 않아서 숫자를 뽑아 오는게 비효율적이다.
 // 2. Combination을 쓰지 않아서 기존에 실패한 숫자 set도 시도한다.
-//    
-//
+// 3. 가로 세로 대각선 검증하는 array인 answer_set의 갯수는 side의 크기에 비례해서 정해져있는데, 아직은 vector로 처리중이다.
+// 4. 
+// 
+// 
+// 
+// 3 X 3 마방진의 경우 최소 772회 최대 19만회 
