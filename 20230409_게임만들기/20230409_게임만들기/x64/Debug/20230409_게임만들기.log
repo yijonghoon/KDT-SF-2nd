@@ -1,0 +1,4 @@
+﻿  20230409_게임만들기.cpp
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230409_게임만들기\20230409_게임만들기\20230409_게임만들기.cpp(157,14): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230409_게임만들기\20230409_게임만들기\20230409_게임만들기.cpp(170,15): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  20230409_게임만들기.vcxproj -> C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230409_게임만들기\x64\Debug\20230409_게임만들기.exe
