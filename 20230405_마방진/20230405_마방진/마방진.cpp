@@ -11,7 +11,6 @@ int main()
     std::cout << "마방진의 크기를 정해주세요" << std::endl;
     std::cin >> side;
     int side_squre = side * side;
-     // N * N의 숫자를 저장하는 array 1~N*N
     int random = 0; // array 숫자 중 하나를 무작위
     int while_count = 0;
 
@@ -31,20 +30,20 @@ int main()
         // 마방진 보드를 만들기 위한 코드
 
         int count = 0; // N^2개의 숫자를 뽑기 위한 count
-        std::vector<int>array; // 숫자 N^2 개를 뽑아 오기 위한 벡터 ex: { 3, 5, 1, 7, 6, 2, 4, 9, 8 } ... 벡터 이름이 어레이여서 죄송합니다
+        std::vector<int>num_set; // 숫자 N^2 개를 뽑아 오기 위한 벡터 ex: { 3, 5, 1, 7, 6, 2, 4, 9, 8 } ...
         while (count < side_squre)
         {
             random = rand() % side_squre + 1; // 랜덤 숫자를 하나 뽑고
-            bool is_exist = false; // array 안에 지금 뽑은 random 숫자가 있는지 판별하기 위한 bool
+            bool is_exist = false; // num_set 안에 지금 뽑은 random 숫자가 있는지 판별하기 위한 bool
             for (int i = 0; i < count; i++) {
-                if (array[i] == random) {
-                    is_exist = true; // array 안에 중복되는 경우가 있다면 false 였던 is_exist를 true로 바꿔준다.
+                if (num_set[i] == random) {
+                    is_exist = true; // num_set 안에 중복되는 경우가 있다면 false 였던 is_exist를 true로 바꿔준다.
                     break;
                 }
             }
 
-            if (is_exist == false) { //array 안에 중복이 하나도 없다면
-                array.push_back(random); // array 안에 넣어 주고
+            if (is_exist == false) { //num_set 안에 중복이 하나도 없다면
+                num_set.push_back(random); // num_set 안에 넣어 주고
                 matrix[count / side].push_back(random); // 마방진 안에도 숫자를 채워준다.
                 count++;
             }
@@ -78,7 +77,7 @@ int main()
 
 
 
-        int answer = answer_set[0]; // array의 첫번째 숫자를 정답 표본으로 사용함
+        int answer = answer_set[0]; // answer_set의 첫번째 숫자를 정답 표본으로 사용함
         bool correct = true;
         for (int i = 1; i < answer_set.size() ; i++) {
            // std::cout << answer_set[i] << " ";
@@ -97,10 +96,10 @@ int main()
                     
                 }
                 std::cout << std::endl;
-                matrix[i].clear();
+                // matrix[i].clear();
             }
             std::cout << std::endl  << while_count << "회 시도 후 성공했습니다." << std::endl;
-            matrix.clear();
+            // matrix.clear();
             break; // break로 while문 탈출
         }
       
