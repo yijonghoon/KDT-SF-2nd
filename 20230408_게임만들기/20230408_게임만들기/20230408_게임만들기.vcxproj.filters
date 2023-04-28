@@ -24,10 +24,10 @@
     <ClCompile Include="Gun.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sword.cpp">
+    <ClCompile Include="Weapon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Weapon.cpp">
+    <ClCompile Include="Sword.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

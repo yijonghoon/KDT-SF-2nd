@@ -1,9 +1,20 @@
 ﻿  20230408_게임만들기.cpp
-C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\20230408_게임만들기.cpp(117,23): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\20230408_게임만들기.cpp(129,27): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.h(85,23): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.h(97,27): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Character.cpp
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.h(85,23): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.h(97,27): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.cpp(4,17): error C2084: 'void Character::attack(void)' 함수에 이미 본문이 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.h(43,10): message : 'attack'의 이전 정의를 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.cpp(19,17): error C2084: 'void Character::pickWeapon(Weapon *)' 함수에 이미 본문이 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.h(46,10): message : 'pickWeapon'의 이전 정의를 참조하십시오.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Character.cpp(29,12): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
   Gun.cpp
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Gun.cpp(3,11): error C2084: 'void Gun::attack(void)' 함수에 이미 본문이 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Gun.h(14,10): message : 'attack'의 이전 정의를 참조하십시오.
   Sword.cpp
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Sword.cpp(4,13): error C2084: 'void Sword::attack(void)' 함수에 이미 본문이 있습니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Sword.h(14,10): message : 'attack'의 이전 정의를 참조하십시오.
   Weapon.cpp
 C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.cpp(6,13): error C2084: 'int Weapon::get_damage(void)' 함수에 이미 본문이 있습니다.
 C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.h(22,9): message : 'get_damage'의 이전 정의를 참조하십시오.
@@ -14,6 +25,6 @@ C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게�
 C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.cpp(17,14): error C2084: 'void Weapon::used(void)' 함수에 이미 본문이 있습니다.
 C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.h(25,10): message : 'used'의 이전 정의를 참조하십시오.
   코드를 생성하고 있습니다...
-C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.h(24): error C4716: 'Weapon::get_name': 값을 반환해야 합니다.
 C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.h(22): error C4716: 'Weapon::get_damage': 값을 반환해야 합니다.
+C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.h(24): error C4716: 'Weapon::get_name': 값을 반환해야 합니다.
 C:\Users\UserK\Desktop\github\KDT-SF-2nd\20230408_게임만들기\20230408_게임만들기\Weapon.h(23): error C4716: 'Weapon::get_durability': 값을 반환해야 합니다.

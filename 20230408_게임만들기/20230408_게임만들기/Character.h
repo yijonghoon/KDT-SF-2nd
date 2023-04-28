@@ -9,7 +9,8 @@
 #include<ctime>
 
 #include "Weapon.h"
-
+#include "Gun.h"
+#include "Sword.h"
 
 class Character {
     int hp, level;
